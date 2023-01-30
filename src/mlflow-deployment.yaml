@@ -1,6 +1,6 @@
 $schema: https://azuremlschemas.azureedge.net/latest/managedOnlineDeployment.schema.json
 name: mlflow-deployment
-endpoint_name: price-prediction-ep
+endpoint_name: price-prediction-ep1
 model: azureml:Taxi-Data:1
 instance_type: Standard_F2s_v2
 instance_count: 1
