@@ -18,7 +18,7 @@ jobs:
       - name: set current directory
         run: cd src
       - name: Create endpoint
-        run: az ml online-endpoint create --name price-prediction-ep1 -f src/create-endpoint.yaml --resource-group cal-3639-700 --workspace-name mlw83d6
+        run: az ml online-endpoint create --name price-prediction-ep1 -f src/create-endpoint.yaml --resource-group cal-1240-7f9 --workspace-name mlwfb28
   deploy:
     name: deploy model
     needs: create
@@ -35,4 +35,4 @@ jobs:
       - name: set current directory
         run: cd src
       - name: deploy model
-        run: az ml online-deployment create --name mlflow-deployment --endpoint price-prediction-ep1 -f src/mlflow-deployment.yaml --resource-group cal-3639-700 --workspace-name mlw83d6 --all-traffic
+        run: az ml online-deployment create --name mlflow-deployment --endpoint price-prediction-ep1 -f src/mlflow-deployment.yaml --resource-group cal-1240-7f9 --workspace-name mlwfb28 --all-traffic
