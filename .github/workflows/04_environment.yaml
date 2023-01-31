@@ -22,7 +22,7 @@ jobs:
       - name: set current directory
         run: cd src
       - name: Run dev env job
-        run: az ml job create --file src/development.yaml --resource-group cal-3639-700 --workspace-name mlw83d6 --stream
+        run: az ml job create --file src/development.yaml --resource-group cal-1240-7f9 --workspace-name mlwfb28 --stream
   prod:
     name: prod
     needs: dev
@@ -41,4 +41,4 @@ jobs:
       - name: set current directory
         run: cd src
       - name: Run prod env job
-        run: az ml job create --file src/production.yaml --resource-group cal-3639-700 --workspace-name mlw83d6 --stream  
+        run: az ml job create --file src/production.yaml --resource-group cal-1240-7f9 --workspace-name mlwfb28 --stream  
